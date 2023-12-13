@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CRM for mobile and computer repair centers. Job sheet generation, service management and billing with status SMS to customers">
+    <meta name="keywords" content="servicespro, services pro, services pro solutions, CRM for mobile repair centers, CRM for computer repair centers, Software for Mobile and computer service center, Job sheet generation,appliance repair field service software,auto repair management software free,cell phone repair shop management software,computer repair form,computer repair form template,computer repair invoice,computer repair invoice template,computer repair invoice template excel,computer repair management software,computer repair receipt,computer repair shop management software,computer repair shop software,computer repair software,computer service job sheet,crm software,field service management app,field service management software,field service management software for small business,field service repair software,field service software,job card software,job card software free,job logging software,job management software,job sheet app,job sheet software,job tracking software,mobile field service management software,mobile field service software,mobile phone repair management software system,mobile phone repair shop management software,mobile repairing software,mobile service software,pc repair software,phone repair software,repair business software,repair center software,repair management software,repair order software,repair service management software,repair service software,repair shop management software,repair shop management software free,repair shop management software open source,repair shop software,repair tracking software,service call software,service center software,service job sheet,service management software,service order software,service shop software,service ticket software,tv repairing software,work order software,Service Centre Management Software">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/57a632e8b3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Poppins:wght@100&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <title>ServicesPro | Job sheet and service management application | mobile & computer repair</title>
+</head>
+<body>
+    <header>
+        <nav class="container menu navbar navbar-expand-lg">
+            <div class="top-left">
+                <button class="menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+                <a href="index.html" class="navbar-brand"><img src="logo.png" alt="logo" class="logo"></a>
+            </div>
+            <div class=" top-right " id="navbarSupportedContent">
+                <div class="navlinks" >
+                    <ul class="navbar-nav mb-2 mb-lg-0 links-menu">
+                        <li class="nav-item"> <a href="" class="nav-link links" aria-current="page">HOME</a></li>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle links" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTS</a>
+                            <ul class="dropdown-menu dropdown-con">
+                            <li><a class="dropdown-item dropdown-links" href="servicesProduct.html">Services</a></li>
+                            <li><a class="dropdown-item dropdown-links" href="salesProduct.html">Sales</a></li>
+                            <li><a class="dropdown-item dropdown-links" href="inventoryProduct.html">Inventory</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a href="Pricing.html" class="nav-link links">PRICING</a></li>
+                        <li class="nav-item"> <a href="" class="nav-link links">HELP CENTER</a></li>
+                        <li class="nav-item"> <a href="#contact" class="nav-link links">CONTACT US</a></li>
+                    </ul>
+                    <button class="close-btn" onclick="toggleMenu()"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="act-btns">
+                    <button class="btn btn-sm login-btn"><a href="login.html" >LOGIN</a></button>
+                    <button class="btn btn-sm rgt-btn"><a href="register.html" >REGISTER</a></button>
+                </div>
+            </div>
+        </nav>
+        <div class="container row bnr-sec">
+            <div class="caption ">
+                <h1>Software for product sales, services and repairs business.</h1>
+                <br>
+                <h4>Join more than 3500 businesses. 15 days free.</h4>
+                <br>
+                <button class="start-btn"><a href="register.html" >START NOW</a></button>
+            </div>
+            <div class=" banner">
+                <img src="homepage_banner.png" alt="" class="bnr-img">
+            </div>
+        </div>
+    </header>
+    <section class="pro-container">
+        <div class="container">
+            <div class="section-header">
+                <small>PRODUCTS</small>
+                <h2>All In One Platform</h2>
+            </div>
+            <div class="row products">
+                <div class="col-12 col-md-6 col-xl-4 pro-details services" >
+                    <img src="services-icon.png" alt="">
+                    <h5>Services</h5>
+                    <p>A complete services and repairs business operations management solution. Create Job sheets, manage services and generate invoices.</p>
+                    <a href="servicesProduct.html">Know More</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 pro-details sales">
+                    <img src="sales-icon.png" alt="">
+                    <h5>Sales</h5>
+                    <p>Simple and sophisticated sales billing solution. Invoice generation and payment details.</p>
+                    <a href="salesProduct.html">Know More</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 pro-details inventory">
+                    <img src="inventory-icon.png" alt="">
+                    <h5>Inventory</h5>
+                    <p>A common module to manage both products and spare parts inventory. Stock management, consumption history and stock transfers.</p>
+                    <a href="inventoryProduct.html">Know More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="brc-container">
+        <div class="container row">
+            <div class="row align-items-center branches brc-section ">
+                <div class="col-12 col-md-7 order-md-last brc-details">
+                    <h4>Unlimited branches and users</h4>
+                    <p>Own multiple branches or offer franchisees? Create unlimited branches and users with just single license. Set up your entire network from day one with any of our licenses and upgrade only on more usage. A true pay as you go model.</p>
+                </div>
+                <div class="col-12 col-md-5 order-md-first">
+                    <img src="user_branches_banner.png" alt="" class="loc-img">
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center playstore brc-section">
+                <div class="col-12 col-md-7 mbl-details">
+                    <h4>Mobile app</h4>
+                    <p>Keeping you always connected to your business. Login with our mobile application now. Provide access to your managers, technicians, front desk executives to complete assigned tasks through the app.</p>
+                    <img src="play-store.png" alt="">
+                </div>
+                <div class="col-12 col-md-5 ">
+                    <img src="mobile-app-banner.png" alt="" class="mobile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients-sec">
+        <div class="container clients-con">
+            <h2>Our Happy Clients</h2>
+            <div class="clients">
+                <div class="slider">
+                    <a href="index.html"><img src="mPhone.jpg" alt=""></a>
+                    <a href="index.html"><img src="appvision.png" alt=""></a>
+                    <a href="index.html"><img src="authentic-services.png" alt=""></a>
+                    <a href="index.html"><img src="sunshine-solutions.png" alt=""></a>
+                    <a href="index.html"><img src="nLive.png" alt=""></a>
+                </div>
+                <div class="slider">
+                    <a href="index.html"><img src="mPhone.jpg" alt=""></a>
+                    <a href="index.html"><img src="appvision.png" alt=""></a>
+                    <a href="index.html"><img src="authentic-services.png" alt=""></a>
+                    <a href="index.html"><img src="sunshine-solutions.png" alt=""></a>
+                    <a href="index.html"><img src="nLive.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="contact" id="contact">
+        <h2>Sign up now for 15 days free trail.</h2>
+        <button class="start-btn"><a href="register.html">START NOW</a></button>
+        <br>
+        <span>Already Registered? <a href="login.html">Log in</a></span>
+    </div>
+    <footer>
+        <div class="container footer">
+            <div class="address">
+                <ul>
+                    <li><img src="mobile-logo.png" alt="logo" class="logo"></li>
+                    <br>
+                    <li><p>105, 1st Floor,Sri Surya Boys Hostel, Road no-03, Kphb colony, Hyderabad, Telangana - 500072</p></li>
+                    <li>+91 9985833460</li>
+                    <li><a href="mailto:tejapotnuri45@gmail.com">support@servicespro.com</a></li>
+                </ul>
+            </div>
+            <div class="details">
+                <div class="product-links">
+                    <ul>
+                        <h6>PRODUCTS</h6>
+                        <li><a href="servicesProduct.html">Services</a></li>
+                        <li><a href="salesProduct.html">Sales</a></li>
+                        <li><a href="inventoryProduct.html">Inventory</a></li>
+                    </ul>
+                </div>
+                <div class="company">
+                    <ul>
+                        <h6>COMPANY</h6>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <a href="https://github.com/Tejapotnuri"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/teja-potnuri-4282a2249/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/Im.Tejaa"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <h6 class="copyright">Copyright ©2023 ServicesPro. All rights reserved</h6>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+		let menubar = document.querySelector(".menu-btn");
+		let navlink = document.querySelector(".navlinks");
+		function togMenu()
+			{
+				menubar.classList.toggle('active');
+                navlink.classList.toggle('active');
+			}
+		function toggleMenu()
+			{
+				togMenu();
+			}
+	</script>
+</body>
+</html>

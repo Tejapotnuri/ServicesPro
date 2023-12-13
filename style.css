@@ -1,0 +1,525 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    font-family: system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+header{
+    background-image: linear-gradient(to right,rgba(2,52,55,1) 0,rgba(6,151,158,1) 100%);
+    height: 800px;
+    width: 100%;
+}
+.menu-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    padding-right: 20px;
+    display: none;
+}
+.close-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 35px;
+    font-weight: 100;
+    display: none;
+    color: #535353;
+}
+.menu{
+    padding: 18px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 180px;
+    height: 50px;
+    padding-bottom: 5px;
+}
+.top-right{
+    display: flex;
+    height: 50px;
+    justify-content: end;
+    gap: 30px;
+}
+.top-right ul{
+    gap: 18px;
+}
+.links{
+    color: #fff;
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: 650;
+    letter-spacing: 1px;
+}
+.links:hover{
+    color: #023437;
+}
+.act-btns{
+    margin-top: 10px;
+}
+.act-btns a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.login-btn{
+    background-color: transparent;
+    border-color: #023437;
+    width: 80px;
+    font-size: 11px;
+    font-weight: 700;
+    height: 30px;
+    letter-spacing: 2px;
+}
+.rgt-btn{
+    background-color: #023437;
+    width: 80px;
+    font-size: 11px;
+    font-weight: 700;
+    height: 30px;
+    letter-spacing: 2px;
+}
+.rgt-btn:hover{
+    background-color:transparent;
+    border-color: #023437;
+}
+.login-btn:hover{
+    background-color:#023437;
+}
+.dropdown-con{
+    background-color: transparent;
+    border: none;
+}
+.dropdown-links {
+    color: #f8f8f8;
+    text-transform: uppercase;
+}
+.dropdown-links:hover{
+    background-color: transparent;
+}
+.bnr-sec{
+    width: 78%;
+    height: 580px;
+    position: absolute;
+    left: 13%;
+    top: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.caption{
+    width: 50%;
+    height: 500px;
+    font-family: "Dosis","Open Sans",sans-serif;
+    line-height: 1.6;
+    position: relative;
+    top: 45px;
+}
+.caption h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.caption h4{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.start-btn{
+    background-color: #023437;
+    width: 190px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.start-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 550;
+    letter-spacing: 2px;
+}
+.start-btn:hover{
+    box-shadow: rgba(255, 255, 255, 0.2)0px 7px 29px 0px;
+    transition: box-shadow 0.5s;
+}
+.banner{
+    border-radius: 10px;
+    width: 50%;
+}
+.bnr-img{
+    width: 100%;
+    height: 430px;
+    margin-bottom: 50px;
+}
+section{
+    width: 100%;
+}
+.pro-container{
+    background-color: #fff;
+}
+.section-header{
+    text-align: center;
+    margin-top:100px;
+}
+.section-header small{
+    color: rgb(207, 202, 202);
+    font-size: 10px;
+    font-weight: 600;
+}
+.section-header h2{
+    font-family: "Dosis","Open Sans",sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(73, 70, 70);
+    padding-top: 20px;
+}
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+.pro-details{
+    text-align: center;
+    padding: 20px;
+    min-height: 400px;
+} 
+.pro-details p{
+    padding: 18px;
+    line-height: 1.8;
+    font-weight: 300;
+}
+.sales a{
+    position: relative;
+    top: 29px;
+}
+.pro-details a{
+    text-decoration: none;
+}
+.pro-details h5{
+    font-size: 18px;
+    font-weight: 300;
+}
+.brc-container{
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+.brc-section{
+    padding: 100px 0;
+    margin-left: 20px;
+}
+
+.brc-details{
+    padding-left: 70px;
+}
+
+.brc-section h4{
+    font-size: 25px;
+    font-family:"Dosis", "Open Sans",sans-serif ;
+    color: black;
+    font-weight: 600;
+}
+.brc-container p{
+    padding-top: 10px;
+    line-height: 1.8;
+    padding-right: 20px;
+    color: #535353;
+    font-weight: 300;
+}
+.playstore{
+    padding-left: 20px;
+}
+.loc-img{
+    background-color: #f8f8f8;
+    margin-left: 30px;
+    width: 90%;
+}
+.mobile-img{
+    background-color: #f8f8f8;
+    width: 90%;
+}
+.clients-sec h2{
+    font-family: "Dosis","Open Sans",sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(73, 70, 70);
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+.clients-con{
+    width: 75%;
+}
+.clients{
+    margin-top: 50px;
+    padding: 60px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    background: white;
+}
+  
+.clients:before,
+.clients:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.clients:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.clients:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.clients:hover .slider {
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+.slider{
+    display: inline-block;
+    animation: 30s slide infinite linear;
+}
+.clients img{
+    margin: 0 40px;
+}
+
+.contact{
+    height: 400px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+.contact h2{
+    font-family: "Dosis","Open Sans",sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #37404d;
+    padding-top: 80px;
+}
+.start-btn{
+    background-color: #023437;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-top: 70px;    
+}
+.start-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 550;
+}
+.start-btn:hover{
+    box-shadow: rgba(255, 255, 255, 0.2)0px 7px 29px 0px;
+    transition: box-shadow 0.5s;
+}
+.contact span{
+    color:#868585;
+    line-height: 2.5;
+    font-size: 12px;
+}
+.contact span a{
+    text-decoration: none;
+}
+footer{
+    background: #dedede;
+    min-height: 300px;
+    color: #535353;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+}
+.address{
+    width: 450px;
+    line-height: 2;
+}
+.address li a{
+    color:rgb(72, 72, 209);
+    font-size: 14px;
+    line-height: 2;
+}
+.details{
+    display: flex;
+}
+.footer ul{
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.footer a{
+    text-decoration: none;
+    color: #535353;
+}
+.footer h6{
+    font-weight: 620;
+    font-size: 15px;
+    color: black;
+}
+.product-links, .company, .social-media{
+    width: 150px;
+    padding-top: 15px;
+    line-height: 2.5;
+}
+
+
+.social-media i{
+    font-size: 20px;
+    padding-top: 30px;
+    width: 40px;
+    color: black;
+}
+
+.copyright{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    color: #535353;
+    font-weight: 600;
+}
+
+
+@media (max-width:990px) {
+    header{
+        height: 600px;
+    }
+    .banner{
+        display: none;
+    }
+    .menu-btn{
+        display:inline;
+    }
+    .caption{
+        width: 100%;
+    }
+    .caption h1{
+        font-size: 3rem;
+    }
+    .caption h4{
+        font-size: 1rem;
+    }
+    .start-btn{
+        margin-top: 0;
+        width: 150px;
+    }
+    .navlinks{
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        padding-left: 10px;
+        position: fixed;
+        left: 0;
+        top: 0px;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        background-color: rgba(255,255,255, 0.9);
+        z-index: 2;
+        display: none;
+    }
+    .navlinks a{
+        color: black;
+    }
+    .navlinks.active{
+        display: flex;
+        pointer-events: auto;
+    }
+    .close-btn{
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 2%;
+        margin-right: 3%;
+    }
+    .links-menu{
+        background-color: #fff;
+        width: 45%;
+        min-height: 100vh;
+        padding: 20px;
+        position: fixed;
+        left: 0;
+        transition: .3s;
+    }
+    .contact{
+        height: 300px;
+        padding-top: 50px;
+    }
+    .contact h2{
+        font-size: 50px;
+        padding: 10px;
+    }
+    .footer{
+        display: block;
+    }
+    .address{
+        width: 70%;
+        line-height: 1.5;
+    }
+    .details{
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:650px) {
+    .menu-btn{
+        font-size: 20px;
+    }
+    .logo{
+        width: 130px;
+    }
+    .login-btn{
+        width: 60px;
+    }
+    .rgt-btn{
+        display: none;
+    }
+    .brc-section{
+        margin: 0;
+    }
+    .brc-details{
+        padding-left: 40px;
+    }
+    .caption h1{
+        font-size: 2rem;
+    }
+    .contact h2{
+        font-size: 40px;
+    }
+    .clients:before,
+    .clients:after{
+        width: 50px;
+    }
+}

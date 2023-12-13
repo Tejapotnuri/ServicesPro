@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CRM for mobile and computer repair centers. Job sheet generation, service management and billing with status SMS to customers">
+    <meta name="keywords" content="servicespro, services pro,services pro solutions, CRM for mobile repair centers, CRM for computer repair centers, Software for Mobile and computer service center, Job sheet generation,appliance repair field service software,auto repair management software free,cell phone repair shop management software,computer repair form,computer repair form template,computer repair invoice,computer repair invoice template,computer repair invoice template excel,computer repair management software,computer repair receipt,computer repair shop management software,computer repair shop software,computer repair software,computer service job sheet,crm software,field service management app,field service management software,field service management software for small business,field service repair software,field service software,job card software,job card software free,job logging software,job management software,job sheet app,job sheet software,job tracking software,mobile field service management software,mobile field service software,mobile phone repair management software system,mobile phone repair shop management software,mobile repairing software,mobile service software,pc repair software,phone repair software,repair business software,repair center software,repair management software,repair order software,repair service management software,repair service software,repair shop management software,repair shop management software free,repair shop management software open source,repair shop software,repair tracking software,service call software,service center software,service job sheet,service management software,service order software,service shop software,service ticket software,tv repairing software,work order software,Service Centre Management Software">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/57a632e8b3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Poppins:wght@100&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+    <script src="priceCheck.js"></script>
+    <link rel="stylesheet" href="price-style.css">
+    <link rel="icon" href="icon.png">
+    <title>ServicesPro | Job sheet and service management application | mobile & computer repair</title>
+</head>
+<body>
+    <header>
+        <nav class="container menu navbar navbar-expand-lg">
+            <div class="top-left">
+                <button class="menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+                <a href="index.html" class="navbar-brand"><img src="logo.png" alt="logo" class="logo"></a>
+            </div>
+            <div class=" top-right " id="navbarSupportedContent">
+                <div class="navlinks" >
+                    <ul class="navbar-nav mb-2 mb-lg-0 links-menu">
+                        <li class="nav-item"> <a href="index.html" class="nav-link links" >HOME</a></li>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle links" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTS</a>
+                            <ul class="dropdown-menu dropdown-con">
+                                <li><a class="dropdown-item dropdown-links" href="servicesProduct.html">Services</a></li>
+                                <li><a class="dropdown-item dropdown-links" href="salesProduct.html">Sales</a></li>
+                                <li><a class="dropdown-item dropdown-links" href="inventoryProduct.html">Inventory</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a href="Pricing.html" class="nav-link links" aria-current="page">PRICING</a></li>
+                        <li class="nav-item"> <a href="" class="nav-link links">HELP CENTER</a></li>
+                        <li class="nav-item"> <a href="#contact" class="nav-link links">CONTACT US</a></li>
+                    </ul>
+                    <button class="close-btn" onclick="toggleMenu()"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="act-btns">
+                    <button class="btn btn-sm login-btn"><a href="login.html" >LOGIN</a></button>
+                    <button class="btn btn-sm rgt-btn"><a href="register.html" >REGISTER</a></button>
+                </div>
+            </div>
+        </nav>
+        <div class="caption">
+            <h1>Pricing</h1>
+        </div>
+    </header>
+    <section class="price-container">
+        <div class="container">
+            <div class="section-header">
+                <span>Quarterly</span>
+                <div class="toggle" onclick="toggle()">
+                    <div class="toggle-btn">
+                    </div>
+                </div>
+                <span>Yearly</span>
+            </div>
+            <div class=" row price-manage">
+                <div class="col-lg-3 col-md-4 col-sm-12 prices" >
+                    <div class="price-header">
+                        <h5>Services</h5>
+                        <span>Manage all your services.</span>
+                    </div>
+                    <div class="range-block quarterly">
+                        <h5><span id="qServcheck">300</span> Services</h5>
+                        <input type="range" class="range" name="qsSlider" id="qsSlider" value="0" step="1" oninput="quarterValue()" min="0" max="4"> 
+                    </div>
+                    <div class="range-block yearly">
+                        <h5><span id="yServcheck">1200</span> Services</h5>
+                        <input type="range" class="range" name="ysSlider1" id="ysSlider1" value="0" step="1" oninput="yearValue()" min="0" max="4"
+                            oninput="this.style.setProperty('--progress', this.value + '%')"> 
+                    </div>
+                    <div class="branches">
+                        <h5>Unlimited Branches</h5>
+                        <h5>Unlimited Users</h5>
+                    </div>
+                    <div>
+                        <div class=" service-price" >
+                            <ul class="service">
+                                <h6>Basic</h6>
+                                <li>Job Sheets</li>
+                                <li>Pickup & On-site Service options</li>
+                                <li>Service Management</li>
+                                <li>Service Billing</li>
+                                <li>Inventory</li>
+                                <li>Reports</li>
+                                <li>Mobile App</li>
+                            </ul>
+                            <ul class="service">
+                                <h6>Advanced</h6>
+                                <li>Basic features plus</li>
+                                <li>Service Account for clients</li>
+                                <li>Quotations & Approvals</li>
+                                <li>Reviews and feedback</li>
+                                <li>Signature capture options</li>
+                                <li>Attachments (Coming soon...)</li>
+                                <li>Web API (Coming soon...)</li>
+                            </ul>
+                            <ul class="service">
+                                <h6>Enterprise</h6>
+                                <li>Advanced features plus</li>
+                                <li>Service escalation level management and escalations</li>
+                                <li>Warranty service claims options and claim accounts for franchisees</li>
+                            </ul>
+                        </div>
+                        <div class="price-footer">
+                            <div class="service-footer quarterly">
+                                <ul >
+                                    <h6>Rs.<span id="qBsPrice">1200</span></h6>
+                                    <li>Top-up charges Rs.<span id="qBtpCharge">4</span>/service</li>
+                                </ul>
+                                <ul >
+                                    <h6>Rs.<span id="qAdPrice">5400</span></h6>
+                                    <li>Top-up charges Rs.<span id="qAtpCharge">18</span>/service</li>
+                                </ul>
+                                <ul >
+                                    <h6>Rs.<span id="qEtPrice">10800</span></h6>
+                                </ul>
+                            </div>
+                            <div class="service-footer yearly">
+                                <ul >
+                                    <h6>Rs.<span id="yBsPrice">2640</span></h6>
+                                    <li>Top-up charges Rs.<span id="yBtpCharge">2.2</span>/service</li>
+                                </ul>
+                                <ul >
+                                    <h6>Rs.<span id="yAdPrice">18000</span></h6>
+                                    <li>Top-up charges Rs.<span id="yAtpCharge">15</span>/service</li>
+                                </ul>
+                                <ul >
+                                    <h6>Rs.<span id="yEtPrice">36000</span></h6>
+                                </ul>
+                            </div>
+                            <h6 class="gst">Plus GST</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 prices " >
+                    <div class="price-header">
+                        <h5>Sales</h5>
+                        <span>Manage all your services.</span>
+                    </div>
+                    <div class="range-block quarterly">
+                        <h5><span id="qIncheck">400</span> Invoices</h5>
+                    </div>
+                    <div class="range-block yearly">
+                        <h5><span id="yIncheck">1200</span> Invoices</h5>
+                        <input type="range" class="range" name="yiSlider2" id="yiSlider2" value="0" oninput="yearValue()" min="0" max="4"
+                            oninput="this.style.setProperty('--progress', this.value + '%')">
+                    </div>
+                    <div class="branches">
+                        <h5>Unlimited Branches</h5>
+                        <h5>Unlimited Users</h5>
+                    </div>
+                    <div >
+                        <div class=" sale-price" >
+                            <ul class="service">
+                                <h6>Basic</h6>
+                                <li>Job Sheets</li>
+                                <li>Pickup & On-site Service options</li>
+                                <li>Service Management</li>
+                                <li>Service Billing</li>
+                                <li>Inventory</li>
+                                <li>Reports</li>
+                                <li>Mobile App</li>
+                            </ul>
+                        </div>
+                        <div class="price-footer">
+                            <div class="sale-footer quarterly">
+                                <ul >
+                                    <h6 >Rs.<span id="qInPrice">600</span></h6>
+                                    <li>Top-up charges Rs.1.5/invoice</li>
+                                </ul>
+                            </div>
+                            <div class="sale-footer yearly">
+                                <ul >
+                                    <h6 >Rs.<span id="yInPrice">1200</span></h6>
+                                    <li>Top-up charges Rs.<span id="yItpCharge">1</span>/invoice</li>
+                                </ul>
+                            </div>
+                            <h6 class="gst">Plus GST</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 prices" >
+                    <div class="price-header">
+                        <h5>Distribution</h5>
+                    </div>
+                    <div class="distribution-block">
+                        <span>For prices contact</span>
+                        <strong>9985833460</strong>
+                        <span>or mail us to <a href="mailto:tejapotnuri45@gmail.com">support@servicespro.com</a></span>
+                    </div>
+                    <div class="branches">
+                        <h5>Unlimited Branches</h5>
+                        <h5>Unlimited Users</h5>
+                    </div>
+                    <div >
+                        <div class=" sale-price" >
+                            <ul class="service">
+                                <h6>Basic</h6>
+                                <li>Job Sheets</li>
+                                <li>Pickup & On-site Service options</li>
+                                <li>Service Management</li>
+                                <li>Service Billing</li>
+                                <li>Inventory</li>
+                                <li>Reports</li>
+                                <li>Mobile App</li>
+                            </ul>
+                        </div>
+                        <div class="price-footer">
+                            <div class="sale-footer">
+                                <h6 class="con-support">Contact Support</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="addon">
+                <p>SMS are add-on and charges are additional. Purchase it from AddOn page after this purchase.
+                   For higher packages, Contact us at 9985833460, <a href="mailto:tejapotnuri45@gmail.com">support@servicespro.com</a></p>
+            </div>
+        </div>
+    </section>
+    <div class="contact" id="contact">
+        <h2>Sign up now for 15 days free trail.</h2>
+        <button class="start-btn"><a href="register.html">START NOW</a></button>
+        <br>
+        <span>Already Registered? <a href="login.html">Log in</a></span>
+    </div>
+    <footer>
+        <div class="container footer">
+            <div class="address">
+                <ul>
+                    <li><img src="mobile-logo.png" alt="logo" class="logo"></li>
+                    <br>
+                    <li><p>105, 1st Floor,Sri Surya Boys Hostel, Road no-03, Kphb colony, Hyderabad, Telangana - 500072</p></li>
+                    <li>+91 9985833460</li>
+                    <li><a href="mailto:tejapotnuri45@gmail.com">support@servicespro.com</a></li>
+                </ul>
+            </div>
+            <div class="details">
+                <div class="product-links">
+                    <ul>
+                        <h6>PRODUCTS</h6>
+                        <li><a href="servicesProduct.html">Services</a></li>
+                        <li><a href="salesProduct.html">Sales</a></li>
+                        <li><a href="inventoryProduct.html">Inventory</a></li>
+                    </ul>
+                </div>
+                <div class="company">
+                    <ul>
+                        <h6>COMPANY</h6>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <a href="https://github.com/Tejapotnuri"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/teja-potnuri-4282a2249/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/Im.Tejaa"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <h6 class="copyright">Copyright ©2023 ServicesPro. All rights reserved</h6>
+    </footer>
+
+
+    <script>
+        let menubar = document.querySelector(".menu-btn");
+        let navlink = document.querySelector(".navlinks");
+        let toggleOut = document.querySelector(".toggle");
+        let toggleIn = document.querySelector(".toggle-btn");
+        let qutBar = document.querySelectorAll(".quarterly");
+        let yearBar = document.querySelectorAll(".yearly");
+
+        function toggleMenu()
+            {
+                menubar.classList.toggle('active');
+                navlink.classList.toggle('active');
+            }
+        function toggle(){
+                toggleOut.classList.toggle('active');
+                toggleIn.classList.toggle('active');
+                qutBar.forEach(qutBars => {
+                qutBars.classList.toggle('active');
+                });
+                yearBar.forEach(yearBars => {
+                yearBars.classList.toggle('active');
+                });
+            }
+    </script>
+
+</body>
+</html>
