@@ -422,6 +422,7 @@ footer{
     }
     .caption{
         width: 100%;
+        top: -20px;
     }
     .caption h1{
         font-size: 3rem;
