@@ -28,48 +28,67 @@
             <div class="mobile-logo">
                 <img src="mobile-logo.png" alt="logo" class="logo">
             </div>
-            <form action="" class="form ">
+            <form action="" class="form " id="registrationForm">
                 <ul class="form-area row form-list signup-form-list">
                     <li><h4>Register</h4></li>
                     <li class="col-lg-6 col-md-6 col-sm-12 form-list-item">
-                        <label for="email">First Name<span class='mandatory-field'>*</span></label>
+                        <label for="fname">First Name<span class='mandatory-field'> *</span></label>
+                        <input type="text" class="input-field" name="fname" id="fname">
+                        <div class="error-message" id="fnameError"></div>
+                    </li>
+                    <li class="col-lg-6 col-md-6 col-sm-12 form-list-item">
+                        <label for="lname">Last Name<span class='mandatory-field'> *</span></label>
+                        <input type="text" class="input-field" name="lname" id="lname">
+                        <div class="error-message" id="lnameError"></div>
+                    </li>
+                    <li class="col-lg-6 col-md-6 col-sm-12 form-list-item">
+                        <label for="email">Email Id<span class='mandatory-field'> *</span></label>
                         <input type="email" class="input-field" name="email" id="email">
+                        <div class="error-message" id="emailError"></div>
                     </li>
                     <li class="col-lg-6 col-md-6 col-sm-12 form-list-item">
-                        <label for="password">Last Name<span class='mandatory-field'>*</span></label>
-                        <input type="password" class="input-field" name="password" id="password">
+                        <label for="mobile">Mobile Number<span class='mandatory-field'> *</span></label>
+                        <input type="tel" class="input-field" name="mobile" id="mobile" pattern="[6789]\d{9}" maxlength="10" required>
+                        <div class="error-message" id="mobileError"></div>
                     </li>
                     <li class="col-lg-6 col-md-6 col-sm-12 form-list-item">
-                        <label for="password">Email Id<span class='mandatory-field'>*</span></label>
-                        <input type="password" class="input-field" name="password" id="password">
+                        <label for="company">Company<span class='mandatory-field'> *</span></label>
+                        <input type="text" class="input-field" name="company" id="company">
+                        <div class="error-message" id="companyError"></div>
                     </li>
                     <li class="col-lg-6 col-md-6 col-sm-12 form-list-item">
-                        <label for="password">Mobile Number<span class='mandatory-field'>*</span></label>
+                        <label for="password">Password<span class='mandatory-field'> *</span></label>
                         <input type="password" class="input-field" name="password" id="password">
+                        <div class="error-message" id="passwordError"></div>
                     </li>
                     <li class="col-lg-6 col-md-6 col-sm-12 form-list-item">
-                        <label for="password">Company<span class='mandatory-field'>*</span></label>
-                        <input type="password" class="input-field" name="password" id="password">
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-12 form-list-item">
-                        <label for="password">Password<span class='mandatory-field'>*</span></label>
-                        <input type="password" class="input-field" name="password" id="password">
-                    </li>
-                    <li class="col-lg-6 col-md-6 col-sm-12 form-list-item">
-                        <label for="password">Re-enter Password<span class='mandatory-field'>*</span></label>
-                        <input type="password" class="input-field" name="password" id="password">
+                        <label for="confirm-password">Confirm Password<span class='mandatory-field'> *</span></label>
+                        <input type="password" class="input-field" name="confirm-password" id="confirm-password">
+                        <div class="error-message" id="confirm-passwordError"></div>
                     </li>
                     <div class='terms-link-wrpr form-list'>
-                        <span class='terms-link'>By Registering you are agreeing to our Terms of Service</span>
+                       <span class='terms-link'>By Registering you are agreeing to our Terms of Service</span>
                     </div>
                     <div class='form-list-item form-list'>
-                        <input type='button' id='registerBtn' value='CREATE ACCOUNT' class='form-btn register-btn reg-btn input-field' />
+                        <input type='submit' id='registerBtn' value='CREATE ACCOUNT' class='form-btn register-btn reg-btn input-field' />
                     </div>
                 </ul>
                 <span class="signin">Already have an account?<a href="login.html"> Sign In</a></span>
             </form>
-            
+            <div id="successMessage" class="success-message">
+                <p><i class="fa-solid fa-circle-check"></i></p>
+                <p>Success! Please check your email inbox.</p>
+                <p>Confirmation link has been sent to <span id="userEmail"></span>. Please click on the link to confirm your email.</p>
+                <br>
+                <p>Follow us to get regular updates.</p>
+                <a href="https://github.com/Tejapotnuri"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/teja-potnuri-4282a2249/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/Im.Tejaa"><i class="fa-brands fa-facebook"></i></a>
+            </div>
         </div>
     </div>
+
+
+    <script src="validation.js"></script>
 </body>
 </html>
