@@ -35,7 +35,7 @@ header{
 }
 .logo{
     width: 180px;
-    height: 50px;
+    height: 60px;
     padding-bottom: 5px;
 }
 .top-right{
@@ -355,6 +355,9 @@ footer{
     background: #dedede;
     min-height: 300px;
     color: #535353;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .footer{
     display: flex;
@@ -492,6 +495,11 @@ footer{
     .details{
         justify-content: space-between;
     }
+    .copyright{
+        margin-top: 0;
+        position: relative;
+        bottom: 5px;
+    }
 }
 
 @media (max-width:650px) {
@@ -499,7 +507,8 @@ footer{
         font-size: 20px;
     }
     .logo{
-        width: 130px;
+        width: 120px;
+        height: 30px;
     }
     .login-btn{
         width: 60px;
