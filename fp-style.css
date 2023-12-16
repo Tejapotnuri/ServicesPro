@@ -16,7 +16,7 @@ body{
 }  
 .logo{
     width: 180px;
-    height: 50px;
+    height: 60px;
     padding-bottom: 5px;
 } 
 .mobile-logo{
@@ -160,16 +160,11 @@ form h4{
 
 @media (max-width:650px) {
     .logo{
-        width: 160px;
+        width: 150px;
+        height: 50px;
     }
     .signup{
         font-size: 12px;
     }
 }
 
-@media (max-width:475px) {
-
-    .logo{
-        width: 130px;
-    }
-}
