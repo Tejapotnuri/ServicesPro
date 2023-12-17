@@ -3,9 +3,9 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    font-family: "Oswald" ,Arial,sans-serif;
 }
 body{
-    font-family: system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     background: #ebeff5;
 }
 .sub-con{
@@ -68,6 +68,7 @@ body{
     padding-left: 28px;
     font-weight: 450;
     font-size: 14px;
+    letter-spacing: 1px;
 }
 .form-con{
     width: 50%;
@@ -89,6 +90,7 @@ form h4{
     color: #04696e;
     font-size: 18px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 .form-area{
     list-style: none;
@@ -100,6 +102,7 @@ form h4{
     display: block;
     padding-bottom: 2px;
     font-size: 14px;
+    letter-spacing: 1px;
 }
 .form-area li{
     padding-top: 10px;
@@ -126,10 +129,11 @@ form h4{
     background: #04696e;
     color: #fff;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     cursor: pointer;
     margin-top: 10px;
     height: 40px;
+    letter-spacing: 1px;
 }
 .form-area .login:hover {
     color: #04696e;
